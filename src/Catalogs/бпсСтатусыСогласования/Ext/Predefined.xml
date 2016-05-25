@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="82460c5d-b565-468a-a1f5-c87855af7b0c">
+		<Name>ВПроцессеСогласования</Name>
+		<Code>000000002</Code>
+		<Description>В процессе согласования</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d2af1fc4-df3a-453e-b176-cd3a27a12c64">
+		<Name>ВозвращеноНаДоработку</Name>
+		<Code>000000003</Code>
+		<Description>Возвращено на доработку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="614d3a40-2293-4597-a677-6e6877a929e3">
+		<Name>НеУтверждено</Name>
+		<Code>000000001</Code>
+		<Description>Не утверждено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="774a7f50-7c40-4318-8f4c-18c1396c929b">
+		<Name>Отклонено</Name>
+		<Code>000000004</Code>
+		<Description>Отклонено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ffc5b1f5-8f75-4991-807e-2a6d742eda0e">
+		<Name>Утверждено</Name>
+		<Code>000000005</Code>
+		<Description>Утверждено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
