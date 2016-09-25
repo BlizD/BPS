@@ -430,6 +430,12 @@
 							<ContextMenu name="ЗапретитьПроведениеОбъектаБДПокаОнНеСогласованКонтекстноеМеню" id="132"/>
 							<ExtendedTooltip name="ЗапретитьПроведениеОбъектаБДПокаОнНеСогласованРасширеннаяПодсказка" id="133"/>
 						</CheckBoxField>
+						<CheckBoxField name="ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласован" id="137">
+							<DataPath>Объект.ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласован</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласованКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласованРасширеннаяПодсказка" id="139"/>
+						</CheckBoxField>
 						<InputField name="Код" id="1">
 							<DataPath>Объект.Code</DataPath>
 							<EditMode>EnterOnInput</EditMode>
