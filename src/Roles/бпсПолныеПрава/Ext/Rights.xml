@@ -595,10 +595,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>ExclusiveMode</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ActiveUsers</name>
 			<value>true</value>
 		</right>
@@ -615,31 +611,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>ThickClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ExternalConnection</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Automation</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AllFunctionsMode</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>SaveUserData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveOpenExtDataProcessors</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveOpenExtReports</name>
 			<value>true</value>
 		</right>
 		<right>
