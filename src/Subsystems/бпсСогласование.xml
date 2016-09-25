@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Subsystem uuid="c4fc754e-a348-4ff7-a041-bbf82949e250">
+		<Properties>
+			<Name>бпсСогласование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.бпсЛоготип</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсЗадачиПоБизнесПроцессам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсСвойстваЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бпсСветофорКрасный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бпсСветофорЗеленый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бпсСветофорЖелтый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсКомандыСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсБизнесПроцессыСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бпсКтоМожетСогласовать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бпсОтчетЛистСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсСпособыPOP3Аутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсСпособыSMTPАутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.бпсФормаВыбораОбъектаБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.бпсОтправкаСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бпсПередЗаписьюСправочников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бпсПередЗаписьюДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бпсОбщийМодуль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.бпсКтоМожетСогласовать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.бпсСогласование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бпсЛоготип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бпсСтатусСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бпсПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бпсРедактированиеРегистраАдресации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бпсРедактированиеДокументаРегистрацияСтатусаОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бпсПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бпсОтчетЛистСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бпсСтатусыСогласований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.бпсЗадача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бпсНастройкиСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бпсЛоготипНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсПодразделенияАдресации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсПредметыСогласований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсРолиАдресации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсСтатусыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсТипыОбъектовБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсУсловия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсУчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.бпсРегистрацияСтатусаОбъекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсТипыОшибок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсРегистрАдресации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсСтатусыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсЗаблокированныеОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсНастройкиПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсОшибки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.бпсСогласование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бпсСведенияОРазработчике</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.бпсСведенияОРазработчике</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсВариантыSMTPАутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

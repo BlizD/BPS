@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДЗОбъектыБД" id="1">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДЗОбъектыБД</DataPath>
+			<ContextMenu name="ДЗОбъектыБДКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДЗОбъектыБДКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДЗОбъектыБДКомандаВыбрать" id="20">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаВыбрать</CommandName>
+						<ExtendedTooltip name="ДЗОбъектыБДКомандаВыбратьРасширеннаяПодсказка" id="21"/>
+					</Button>
+					<Button name="ДЗОбъектыБДЗакрыть" id="22">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Close</CommandName>
+						<ExtendedTooltip name="ДЗОбъектыБДЗакрытьРасширеннаяПодсказка" id="23"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДЗОбъектыБДРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДЗОбъектыБДСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДЗОбъектыБД</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДЗОбъектыБДСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДЗОбъектыБДСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДЗОбъектыБДСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДЗОбъектыБД</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДЗОбъектыБДСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДЗОбъектыБДСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДЗОбъектыБДУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДЗОбъектыБД</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДЗОбъектыБДУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДЗОбъектыБДУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeRowChange">ДЗОбъектыБДПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДЗОбъектыБДОбъектБДСиноним" id="14">
+					<DataPath>ДЗОбъектыБД.ОбъектБДСиноним</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДЗОбъектыБДОбъектБДСинонимКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДЗОбъектыБДОбъектБДСинонимРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ДЗОбъектыБДОбъектБДИмяМетаданных" id="17">
+					<DataPath>ДЗОбъектыБД.ОбъектБДИмяМетаданных</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДЗОбъектыБДОбъектБДИмяМетаданныхКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДЗОбъектыБДОбъектБДИмяМетаданныхРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДЗОбъектыБДМенеджерОбъекта" id="24">
+					<DataPath>ДЗОбъектыБД.МенеджерОбъекта</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДЗОбъектыБДМенеджерОбъектаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ДЗОбъектыБДМенеджерОбъектаРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДЗОбъектыБД" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ДЗОбъекты БД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ОбъектБДСиноним" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект БД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектБДИмяМетаданных" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект БДИмя метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МенеджерОбъекта" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыбрать</Action>
+		</Command>
+	</Commands>
+</Form>

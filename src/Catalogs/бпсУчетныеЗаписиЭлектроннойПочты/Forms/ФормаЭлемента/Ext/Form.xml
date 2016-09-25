@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаОтправитьТестовоеСообщение" id="70">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаОтправитьТестовоеСообщение</CommandName>
+				<ExtendedTooltip name="ФормаКомандаОтправитьТестовоеСообщениеРасширеннаяПодсказка" id="71"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьТиповыеСредства1сПриОтправкеПочты" id="72">
+			<DataPath>Объект.ИспользоватьТиповыеСредства1сПриОтправкеПочты</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьТиповыеСредства1сПриОтправкеПочтыКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ИспользоватьТиповыеСредства1сПриОтправкеПочтыРасширеннаяПодсказка" id="74"/>
+			<Events>
+				<Event name="OnChange">ИспользоватьТиповыеСредства1сПриОтправкеПочтыПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<Pages name="ГруппаСтраницы" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаНастройкиОсновные" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница настройки основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаНастройкиОсновныеРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="83">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<InputField name="АдресЭлектроннойПочты" id="7">
+									<DataPath>Объект.АдресЭлектроннойПочты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АдресЭлектроннойПочтыКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="АдресЭлектроннойПочтыРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ВремяОжидания" id="10">
+									<DataPath>Объект.ВремяОжидания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяОжиданияКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ВремяОжиданияРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="81">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<InputField name="СерверИсходящейПочты" id="52">
+									<DataPath>Объект.СерверИсходящейПочты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СерверИсходящейПочтыКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СерверИсходящейПочтыРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ПортСервераИсходящейПочты" id="43">
+									<DataPath>Объект.ПортСервераИсходящейПочты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПортСервераИсходящейПочтыКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПортСервераИсходящейПочтыРасширеннаяПодсказка" id="45"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="88">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<InputField name="Пользователь" id="34">
+									<DataPath>Объект.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользовательКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="36"/>
+									<Events>
+										<Event name="OnChange">ПользовательПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Пароль" id="64">
+									<DataPath>Объект.Пароль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПарольКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="РасширенныеНастройки" id="85">
+							<DataPath>РасширенныеНастройки</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РасширенныеНастройкиКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="РасширенныеНастройкиРасширеннаяПодсказка" id="87"/>
+							<Events>
+								<Event name="OnChange">РасширенныеНастройкиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаНастройкиРасширенные" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница настройки основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ГруппаСтраницаНастройкиРасширенныеРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="SMTPАутентификация" id="4">
+							<DataPath>Объект.SMTPАутентификация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="SMTPАутентификацияКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="SMTPАутентификацияРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<CheckBoxField name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочты" id="31">
+							<DataPath>Объект.ИспользоватьЗащищенноеСоединениеДляИсходящейПочты</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочтыКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочтыРасширеннаяПодсказка" id="33"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьБезопасныйВходНаСерверИсходящейПочты" id="19">
+							<DataPath>Объект.ИспользоватьБезопасныйВходНаСерверИсходящейПочты</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьБезопасныйВходНаСерверИсходящейПочтыКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ИспользоватьБезопасныйВходНаСерверИсходящейПочтыРасширеннаяПодсказка" id="21"/>
+						</CheckBoxField>
+						<InputField name="ИмяПользователя" id="13">
+							<DataPath>Объект.ИмяПользователя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ПользовательSMTP" id="37">
+							<DataPath>Объект.ПользовательSMTP</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПользовательSMTPКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ПользовательSMTPРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="СпособSMTPАутентификации" id="58">
+							<DataPath>Объект.СпособSMTPАутентификации</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СпособSMTPАутентификацииКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="СпособSMTPАутентификацииРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<CheckBoxField name="ТребуетсяВходНаСерверПередОтправкой" id="61">
+							<DataPath>Объект.ТребуетсяВходНаСерверПередОтправкой</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТребуетсяВходНаСерверПередОтправкойКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ТребуетсяВходНаСерверПередОтправкойРасширеннаяПодсказка" id="63"/>
+						</CheckBoxField>
+						<InputField name="ПарольSMTP" id="67">
+							<DataPath>Объект.ПарольSMTP</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ПарольSMTPРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<UsualGroup name="ГруппаДополнительныеНастройки" id="90">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные настройки (обычно не требуется заполнять)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительные настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаДополнительныеНастройкиРасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьБезопасныйВходНаСерверВходящейПочты" id="92">
+									<DataPath>Объект.ИспользоватьБезопасныйВходНаСерверВходящейПочты</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьБезопасныйВходНаСерверВходящейПочтыКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ИспользоватьБезопасныйВходНаСерверВходящейПочтыРасширеннаяПодсказка" id="94"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьДляПолучения" id="95">
+									<DataPath>Объект.ИспользоватьДляПолучения</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьДляПолученияКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ИспользоватьДляПолученияРасширеннаяПодсказка" id="97"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьЗащищенноеСоединениеДляВходящейПочты" id="98">
+									<DataPath>Объект.ИспользоватьЗащищенноеСоединениеДляВходящейПочты</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьЗащищенноеСоединениеДляВходящейПочтыКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеДляВходящейПочтыРасширеннаяПодсказка" id="100"/>
+								</CheckBoxField>
+								<InputField name="ПортСервераВходящейПочты" id="101">
+									<DataPath>Объект.ПортСервераВходящейПочты</DataPath>
+									<ContextMenu name="ПортСервераВходящейПочтыКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ПортСервераВходящейПочтыРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ПротоколВходящейПочты" id="104">
+									<DataPath>Объект.ПротоколВходящейПочты</DataPath>
+									<ContextMenu name="ПротоколВходящейПочтыКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ПротоколВходящейПочтыРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="СерверВходящейПочты" id="107">
+									<DataPath>Объект.СерверВходящейПочты</DataPath>
+									<ContextMenu name="СерверВходящейПочтыКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="СерверВходящейПочтыРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="СпособPOP3Аутентификации" id="110">
+									<DataPath>Объект.СпособPOP3Аутентификации</DataPath>
+									<ContextMenu name="СпособPOP3АутентификацииКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="СпособPOP3АутентификацииРасширеннаяПодсказка" id="112"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бпсУчетныеЗаписиЭлектроннойПочты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасширенныеНастройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширенные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОтправитьТестовоеСообщение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить тестовое сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отправить тестовое сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтправитьТестовоеСообщение</Action>
+		</Command>
+	</Commands>
+</Form>

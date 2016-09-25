@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="115">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объекта БД</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="116"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="117"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ПроизвольноеУсловие" id="100">
+			<DataPath>Объект.ПроизвольноеУсловие</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПроизвольноеУсловиеКонтекстноеМеню" id="101"/>
+			<ExtendedTooltip name="ПроизвольноеУсловиеРасширеннаяПодсказка" id="102"/>
+			<Events>
+				<Event name="OnChange">ПроизвольноеУсловиеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<Pages name="ГруппаСтраницы" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="95"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаОтборы" id="96">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отборы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница отборы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаОтборыРасширеннаяПодсказка" id="97"/>
+					<ChildItems>
+						<Table name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтбор" id="75">
+							<Representation>Tree</Representation>
+							<Autofill>true</Autofill>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>КомпоновщикНастроекКомпоновкиДанных.Settings.Filter</DataPath>
+							<ViewMode>All</ViewMode>
+							<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+							<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборКонтекстноеМеню" id="76"/>
+							<AutoCommandBar name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборКоманднаяПанель" id="77"/>
+							<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборРасширеннаяПодсказка" id="78"/>
+							<SearchStringAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСтрокаПоиска" id="79">
+								<AdditionSource>
+									<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиОтбор</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="80"/>
+								<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="81"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСостояниеПросмотра" id="82">
+								<AdditionSource>
+									<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиОтбор</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="84"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборУправлениеПоиском" id="85">
+								<AdditionSource>
+									<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиОтбор</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="87"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборПриОкончанииРедактирования</Event>
+								<Event name="OnChange">КомпоновщикНастроекКомпоновкиДанныхНастройкиОтборПриИзменении</Event>
+							</Events>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаТекстЗапроса" id="98">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница текст запроса</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТекстЗапросаРасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<InputField name="ТекстЗапроса" id="91">
+							<DataPath>Объект.ТекстЗапроса</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="93"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТекстПроизвольногоУсловия" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст произвольного условия</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст произвольного условия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТекстПроизвольногоУсловияРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="113">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<InputField name="ТекстПроизвольногоУсловия" id="105">
+									<DataPath>Объект.ТекстПроизвольногоУсловия</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ТекстПроизвольногоУсловияКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ТекстПроизвольногоУсловияРасширеннаяПодсказка" id="107"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="111">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияИнформация" id="108">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обращение к объекту, который согласовывается, происходит через переменную "&lt;b&gt;ОбъектБД&lt;/&gt;".
+
+Необходимо, чтобы переменная "&lt;b&gt;Результат&lt;/&gt;" в итоге приняло значение "&lt;b&gt;Истина&lt;/&gt;" или "&lt;b&gt;Ложь&lt;/&gt;"
+
+Например:
+
+Результат = Ложь;
+Если ОбъектБД.ПометкаУдаления = Истина Тогда
+       Результат = Истина;
+Конецесли;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ДекорацияИнформацияРасширеннаяПодсказка" id="110"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бпсУсловия</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КомпоновщикНастроекКомпоновкиДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик настроек компоновки данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

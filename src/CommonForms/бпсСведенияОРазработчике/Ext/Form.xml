@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="1">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;color #3366ff&gt;Ошибки и пожелания можно публиковать &lt;/&gt;&lt;color #3366ff&gt;в теме публикации Infostart или отправляем на почту проекта:&lt;/&gt;
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<InputField name="ПочтаПроекта" id="4">
+			<DataPath>ЭлектроннаяПочта</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ПочтаПроектаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПочтаПроектаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ПубликацияНаИнфостарт" id="10">
+			<DataPath>ПубликацияНаИнфостарт</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ПубликацияНаИнфостартКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПубликацияНаИнфостартРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="АвторРазработки" id="15">
+			<DataPath>АвторРазработки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="АвторРазработкиКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="АвторРазработкиРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<InputField name="ПрофильИнфостартРазработчика" id="21">
+			<DataPath>ПрофильИнфостартРазработчика</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПрофильИнфостартРазработчикаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ПрофильИнфостартРазработчикаРасширеннаяПодсказка" id="23"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЭлектроннаяПочта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрофильИнфостарт" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль инфостарт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПубликацияНаИнфостарт" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Публикация на инфостарт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвторРазработки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрофильИнфостартРазработчика" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль разработчика на инфостарт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

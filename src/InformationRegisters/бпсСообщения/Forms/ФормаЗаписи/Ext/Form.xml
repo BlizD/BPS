@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИдентификаторСообщения" id="1">
+			<DataPath>Запись.ИдентификаторСообщения</DataPath>
+			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Кому" id="4">
+			<DataPath>Запись.Кому</DataPath>
+			<ContextMenu name="КомуКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="КомуРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Тема" id="7">
+			<DataPath>Запись.Тема</DataPath>
+			<ContextMenu name="ТемаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Тело" id="10">
+			<DataPath>Запись.Тело</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТелоКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТелоРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаСоздания" id="13">
+			<DataPath>Запись.ДатаСоздания</DataPath>
+			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДатаОтправки" id="16">
+			<DataPath>Запись.ДатаОтправки</DataPath>
+			<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="КоличествоПопыток" id="19">
+			<DataPath>Запись.КоличествоПопыток</DataPath>
+			<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ИнформацияООшибке" id="22">
+			<DataPath>Запись.ИнформацияООшибке</DataPath>
+			<ContextMenu name="ИнформацияООшибкеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИнформацияООшибкеРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.бпсСообщения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

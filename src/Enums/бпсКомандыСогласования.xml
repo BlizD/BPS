@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Enum uuid="6ee038a8-8b34-4ed4-b189-71b9684ab656">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.бпсКомандыСогласования" category="Ref">
+				<xr:TypeId>f3385594-bae2-4ccb-84d6-5e8c5dd20dc7</xr:TypeId>
+				<xr:ValueId>eb4adcd1-3e5d-4d56-8728-b5c00313fcca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.бпсКомандыСогласования" category="Manager">
+				<xr:TypeId>5514d462-a268-4e8b-b49e-d6445e14af41</xr:TypeId>
+				<xr:ValueId>a7e7db44-ec7f-433a-afe2-02c47ba037b9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.бпсКомандыСогласования" category="List">
+				<xr:TypeId>209314a5-6fff-4294-b06b-ea9e5dcbfec1</xr:TypeId>
+				<xr:ValueId>60a4982e-3845-4245-b477-bd996ed605b8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>бпсКомандыСогласования</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды согласования</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="76b6cd9d-43c1-4b7d-bbb2-632990868927">
+				<Properties>
+					<Name>Согласовано</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласовано</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a5a8c0a1-94a5-4cca-a2ec-9f8a8c899fbc">
+				<Properties>
+					<Name>НеСогласовано</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не согласовано</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="26f22c04-8067-415c-aa2e-40afc5100747">
+				<Properties>
+					<Name>ВернутьНаДоработку</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вернуть на доработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a7f73716-385a-42b5-82b3-5a4bc6aaa363">
+				<Properties>
+					<Name>ОтправитьНаПовторноеСогласование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправить на повторное согласование</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dbb06058-cfac-442d-9ba2-97ff4ed28c45">
+				<Properties>
+					<Name>ПрекратитьСогласование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прекратить согласование</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

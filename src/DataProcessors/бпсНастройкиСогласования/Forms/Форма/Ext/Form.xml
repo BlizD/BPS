@@ -1,0 +1,1176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<Page name="ГруппаСистемнаяУчетнаяЗаписьПользователя" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Системная учетная запись пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа системная учетная запись пользователя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСистемнаяУчетнаяЗаписьПользователяРасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПояснениеСистемнаяУчетнаяЗаписьПользователя" id="109">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;fontsize 10&gt;&lt;b&gt;&lt;color #3366ff&gt;Необходимо заполнить системную учетную запись для отправки уведомлений&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеСистемнаяУчетнаяЗаписьПользователяКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="ДекорацияПояснениеСистемнаяУчетнаяЗаписьПользователяРасширеннаяПодсказка" id="111"/>
+						</LabelDecoration>
+						<Button name="КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений" id="112">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений</CommandName>
+							<ExtendedTooltip name="КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомленийРасширеннаяПодсказка" id="113"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаНастройкаНовогоСогласования" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка нового согласования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка нового согласования</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаНастройкаНовогоСогласованияРасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЭтап1" id="133">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этап №1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа этап1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЭтап1РасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЭтап1Пояснение" id="130">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;color #3366ff&gt;Необходимо выбрать тип объекта для которого нам требуется настроить новое согласование.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЭтап1ПояснениеКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="ДекорацияЭтап1ПояснениеРасширеннаяПодсказка" id="132"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЭтап1" id="124">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;1. Добавить тип объекта&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияЭтап1КонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ДекорацияЭтап1РасширеннаяПодсказка" id="126"/>
+									<Events>
+										<Event name="Click">Декорация1ЭтапНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЭтап2" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этап №2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа этап2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЭтап2РасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЭтап2Пояснение" id="137">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;color #3366ff&gt;Для созданного типа объекта (на 1 этапе) необходимо добавить предмет согласования. В котором указать условия определения листа согласования.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЭтап2ПояснениеКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ДекорацияЭтап2ПояснениеРасширеннаяПодсказка" id="139"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЭтап2" id="127">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;2. Добавить предмет согласования&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияЭтап2КонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="ДекорацияЭтап2РасширеннаяПодсказка" id="129"/>
+									<Events>
+										<Event name="Click">ДекорацияЭтап2Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЭтап3" id="140">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этап №3</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа этап3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЭтап3РасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЭтап3Пояснение" id="145">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;color #3366ff&gt;Необходимо добавить записи в регистр адресации для указанных ролей и подразделений организаций в предмете согласования (этап №2).&lt;/&gt;
+
+&lt;color #3366ff&gt;Например: если мы в предмете согласования указали &lt;/&gt;
+&lt;color #3366ff&gt;роль: Коммерческий директор и подразделение: Южный регион. Мы должны для этой пары указать того пользователя, кто у нас является коммерческим директором&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЭтап3ПояснениеКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ДекорацияЭтап3ПояснениеРасширеннаяПодсказка" id="147"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЭтап3" id="142">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;3. Настроить регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияЭтап3КонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ДекорацияЭтап3РасширеннаяПодсказка" id="144"/>
+									<Events>
+										<Event name="Click">ДекорацияЭтап3Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЭтап4" id="148">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Этап №4</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа этап3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЭтап4РасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЭтап4Пояснение" id="150">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;color #3366ff&gt;Проверить для всех ли пользователей указан адрес электронной почты, это необходимо для отправки уведомлений по согласованию.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЭтап4ПояснениеКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ДекорацияЭтап4ПояснениеРасширеннаяПодсказка" id="152"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЭтап4" id="153">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;4. Заполнить настройки пользователя&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияЭтап4КонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ДекорацияЭтап4РасширеннаяПодсказка" id="155"/>
+									<Events>
+										<Event name="Click">ДекорацияЭтап4Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаТЧНастройкиПользователей" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница ТЧНастройки пользователей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТЧНастройкиПользователейРасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПояснениеТЧНастройкиПользователей" id="97">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;fontsize 10&gt;&lt;b&gt;&lt;color #3366ff&gt;Необходимо указать адрес электронной почты для пользователей&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеТЧНастройкиПользователейКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="ДекорацияПояснениеТЧНастройкиПользователейРасширеннаяПодсказка" id="99"/>
+						</LabelDecoration>
+						<Table name="ТЧНастройкиПользователей" id="42">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТЧНастройкиПользователей</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЧНастройкиПользователейКонтекстноеМеню" id="43"/>
+							<AutoCommandBar name="ТЧНастройкиПользователейКоманднаяПанель" id="44">
+								<ChildItems>
+									<Button name="ТЧНастройкиПользователейКомандаТЧНастройкиПользователейУстановитьФлажки" id="114">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаТЧНастройкиПользователейУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="ТЧНастройкиПользователейКомандаТЧНастройкиПользователейУстановитьФлажкиРасширеннаяПодсказка" id="115"/>
+									</Button>
+									<Button name="ТЧНастройкиПользователейКомандаТЧНастройкиПользователейСнятьФлажки" id="116">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаТЧНастройкиПользователейСнятьФлажки</CommandName>
+										<ExtendedTooltip name="ТЧНастройкиПользователейКомандаТЧНастройкиПользователейСнятьФлажкиРасширеннаяПодсказка" id="117"/>
+									</Button>
+									<Button name="ТЧНастройкиПользователейКомандаЗаполнитьТЧНастройкиПользователей" id="100">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаЗаполнитьТЧНастройкиПользователей</CommandName>
+										<ExtendedTooltip name="ТЧНастройкиПользователейКомандаЗаполнитьТЧНастройкиПользователейРасширеннаяПодсказка" id="101"/>
+									</Button>
+									<Button name="ТЧНастройкиПользователейКомандаСформироватьЗаписиНастройкиПользователей" id="102">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаСформироватьЗаписиНастройкиПользователей</CommandName>
+										<ExtendedTooltip name="ТЧНастройкиПользователейКомандаСформироватьЗаписиНастройкиПользователейРасширеннаяПодсказка" id="103"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТЧНастройкиПользователейРасширеннаяПодсказка" id="45"/>
+							<SearchStringAddition name="ТЧНастройкиПользователейСтрокаПоиска" id="46">
+								<AdditionSource>
+									<Item>ТЧНастройкиПользователей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧНастройкиПользователейСтрокаПоискаКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ТЧНастройкиПользователейСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЧНастройкиПользователейСостояниеПросмотра" id="49">
+								<AdditionSource>
+									<Item>ТЧНастройкиПользователей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧНастройкиПользователейСостояниеПросмотраКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ТЧНастройкиПользователейСостояниеПросмотраРасширеннаяПодсказка" id="51"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЧНастройкиПользователейУправлениеПоиском" id="52">
+								<AdditionSource>
+									<Item>ТЧНастройкиПользователей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧНастройкиПользователейУправлениеПоискомКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ТЧНастройкиПользователейУправлениеПоискомРасширеннаяПодсказка" id="54"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ТЧНастройкиПользователейПометка" id="104">
+									<DataPath>Объект.ТЧНастройкиПользователей.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТЧНастройкиПользователейПометкаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ТЧНастройкиПользователейПометкаРасширеннаяПодсказка" id="106"/>
+								</CheckBoxField>
+								<InputField name="ТЧНастройкиПользователейПользователь" id="58">
+									<DataPath>Объект.ТЧНастройкиПользователей.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧНастройкиПользователейПользовательКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТЧНастройкиПользователейПользовательРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ТЧНастройкиПользователейАдресЭлектроннойПочты" id="61">
+									<DataPath>Объект.ТЧНастройкиПользователей.АдресЭлектроннойПочты</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧНастройкиПользователейАдресЭлектроннойПочтыКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ТЧНастройкиПользователейАдресЭлектроннойПочтыРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<CheckBoxField name="ТЧНастройкиПользователейНеУведомлятьОЗадачахПочтой" id="64">
+									<DataPath>Объект.ТЧНастройкиПользователей.НеУведомлятьОЗадачахПочтой</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТЧНастройкиПользователейНеУведомлятьОЗадачахПочтойКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ТЧНастройкиПользователейНеУведомлятьОЗадачахПочтойРасширеннаяПодсказка" id="66"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаТЧРегистрАдресации" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистр адресации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница ТЧРегистр адресации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаТЧРегистрАдресацииРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПояснение" id="28">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>#0000FF</TextColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #3366ff&gt;Необходимо указать пользователей для следующих ролей и подразделений&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="30"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа2" id="228">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="229"/>
+							<ChildItems>
+								<CheckBoxField name="ПолучитьТолькоТеЗаписиДляКоторыхНеЗаполненыПользователи" id="233">
+									<DataPath>Объект.ПолучитьТолькоТеЗаписиДляКоторыхНеЗаполненыПользователи</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолучитьТолькоТеЗаписиДляКоторыхНеЗаполненыПользователиКонтекстноеМеню" id="234"/>
+									<ExtendedTooltip name="ПолучитьТолькоТеЗаписиДляКоторыхНеЗаполненыПользователиРасширеннаяПодсказка" id="235"/>
+									<Events>
+										<Event name="OnChange">ПолучитьТолькоТеЗаписиДляКоторыхНеЗаполненыПользователиПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ПредметСогласования" id="225">
+									<DataPath>Объект.ПредметСогласования</DataPath>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="ПредметСогласованияКонтекстноеМеню" id="226"/>
+									<ExtendedTooltip name="ПредметСогласованияРасширеннаяПодсказка" id="227"/>
+									<Events>
+										<Event name="OnChange">ПредметСогласованияПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТЧРегистрАдресации" id="1">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТЧРегистрАдресации</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЧРегистрАдресацииКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ТЧРегистрАдресацииКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ТЧРегистрАдресацииКомандаТЧРегистрАдресацииУстановитьФлажки" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаТЧРегистрАдресацииУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="ТЧРегистрАдресацииКомандаТЧРегистрАдресацииУстановитьФлажкиРасширеннаяПодсказка" id="121"/>
+									</Button>
+									<Button name="ТЧРегистрАдресацииКомандаТЧРегистрАдресацииСнятьФлажки" id="118">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаТЧРегистрАдресацииСнятьФлажки</CommandName>
+										<ExtendedTooltip name="ТЧРегистрАдресацииКомандаТЧРегистрАдресацииСнятьФлажкиРасширеннаяПодсказка" id="119"/>
+									</Button>
+									<Button name="КомандаЗаполнить" id="26">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаЗаполнитьТЧРегистрАдресации</CommandName>
+										<ExtendedTooltip name="КомандаЗаполнитьРасширеннаяПодсказка" id="27"/>
+									</Button>
+									<Button name="НастройкиКомандаСохранитьНастройки" id="34">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаСформироватьЗаписиВРегистрАдресации</CommandName>
+										<ExtendedTooltip name="НастройкиКомандаСохранитьНастройкиРасширеннаяПодсказка" id="35"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТЧРегистрАдресацииРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТЧРегистрАдресацииСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ТЧРегистрАдресации</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧРегистрАдресацииСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТЧРегистрАдресацииСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЧРегистрАдресацииСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ТЧРегистрАдресации</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧРегистрАдресацииСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТЧРегистрАдресацииСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЧРегистрАдресацииУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ТЧРегистрАдресации</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЧРегистрАдресацииУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТЧРегистрАдресацииУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ТЧРегистрАдресацииПриОкончанииРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="НастройкиПометка" id="31">
+									<DataPath>Объект.ТЧРегистрАдресации.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НастройкиПометкаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="НастройкиПометкаРасширеннаяПодсказка" id="33"/>
+								</CheckBoxField>
+								<InputField name="ТЧРегистрАдресацииОчередь" id="230">
+									<DataPath>Объект.ТЧРегистрАдресации.Очередь</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧРегистрАдресацииОчередьКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="ТЧРегистрАдресацииОчередьРасширеннаяПодсказка" id="232"/>
+								</InputField>
+								<InputField name="НастройкиПользователь" id="17">
+									<DataPath>Объект.ТЧРегистрАдресации.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="НастройкиПользовательКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="НастройкиПользовательРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="НастройкиРольАдресации" id="20">
+									<DataPath>Объект.ТЧРегистрАдресации.РольАдресации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="НастройкиРольАдресацииКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="НастройкиРольАдресацииРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="НастройкиПодразделениеАдресации" id="23">
+									<DataPath>Объект.ТЧРегистрАдресации.ПодразделениеАдресации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="НастройкиПодразделениеАдресацииКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="НастройкиПодразделениеАдресацииРасширеннаяПодсказка" id="25"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаОшибки" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница ошибки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаОшибкиРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<Table name="Ошибки" id="69">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Ошибки</DataPath>
+							<RowPictureDataPath>Ошибки.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ОшибкиКонтекстноеМеню" id="70"/>
+							<AutoCommandBar name="ОшибкиКоманднаяПанель" id="71"/>
+							<ExtendedTooltip name="ОшибкиРасширеннаяПодсказка" id="72"/>
+							<SearchStringAddition name="ОшибкиСтрокаПоиска" id="73">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиСтрокаПоискаКонтекстноеМеню" id="74"/>
+								<ExtendedTooltip name="ОшибкиСтрокаПоискаРасширеннаяПодсказка" id="75"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОшибкиСостояниеПросмотра" id="76">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиСостояниеПросмотраКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="ОшибкиСостояниеПросмотраРасширеннаяПодсказка" id="78"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОшибкиУправлениеПоиском" id="79">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиУправлениеПоискомКонтекстноеМеню" id="80"/>
+								<ExtendedTooltip name="ОшибкиУправлениеПоискомРасширеннаяПодсказка" id="81"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОшибкиТипОшибки" id="91">
+									<DataPath>Ошибки.ТипОшибки</DataPath>
+									<ContextMenu name="ОшибкиТипОшибкиКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ОшибкиТипОшибкиРасширеннаяПодсказка" id="93"/>
+								</LabelField>
+								<LabelField name="ОшибкиДатаОшибки" id="85">
+									<DataPath>Ошибки.ДатаОшибки</DataPath>
+									<ContextMenu name="ОшибкиДатаОшибкиКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ОшибкиДатаОшибкиРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<LabelField name="ОшибкиОшибка" id="94">
+									<DataPath>Ошибки.Ошибка</DataPath>
+									<ContextMenu name="ОшибкиОшибкаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ОшибкиОшибкаРасширеннаяПодсказка" id="96"/>
+								</LabelField>
+								<LabelField name="ОшибкиПользователь" id="88">
+									<DataPath>Ошибки.Пользователь</DataPath>
+									<ContextMenu name="ОшибкиПользовательКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ОшибкиПользовательРасширеннаяПодсказка" id="90"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаОбъектыИспользуемыеПодсистемойСогласования" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты используемые подсистемой согласования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты используемые подсистемой согласования</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаОбъектыИспользуемыеПодсистемойСогласованияРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<Button name="ФормаОбщаяКомандабпсСведенияОРазработчике" id="215">
+							<Type>UsualButton</Type>
+							<CommandName>CommonCommand.бпсСведенияОРазработчике</CommandName>
+							<ExtendedTooltip name="ФормаОбщаяКомандабпсСведенияОРазработчикеРасширеннаяПодсказка" id="216"/>
+						</Button>
+						<UsualGroup name="ГруппаСправочники" id="179">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Справочники</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа справочники</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСправочникиРасширеннаяПодсказка" id="180"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="164">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Типы объектов&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="166"/>
+									<Events>
+										<Event name="Click">Декорация2Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация3" id="167">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Предметы согласования&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="169"/>
+									<Events>
+										<Event name="Click">Декорация3Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация4" id="170">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Условия&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="172"/>
+									<Events>
+										<Event name="Click">Декорация4Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация1" id="158">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Подразделения адресации&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="160"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация5" id="173">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Роли адресации&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="175"/>
+									<Events>
+										<Event name="Click">Декорация5Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация8" id="190">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Учетные записи электронной почты&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация8КонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="192"/>
+									<Events>
+										<Event name="Click">Декорация8Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="188">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="189"/>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДокументы" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Документы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа документы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="182"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация6" id="176">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Регистрация статуса объекта&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="178"/>
+									<Events>
+										<Event name="Click">Декорация6Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРегистрыСведений" id="198">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистры сведений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа документы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаРегистрыСведенийРасширеннаяПодсказка" id="199"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация13" id="209">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Настройки пользователей&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация13КонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="211"/>
+									<Events>
+										<Event name="Click">Декорация13Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация10" id="200">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="202"/>
+									<Events>
+										<Event name="Click">Декорация10Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация12" id="206">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Заблокированные объекты&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="208"/>
+									<Events>
+										<Event name="Click">Декорация12Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация15" id="217">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Сообщения&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация15КонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="219"/>
+									<Events>
+										<Event name="Click">Декорация15Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация14" id="212">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Ошибки&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="214"/>
+									<Events>
+										<Event name="Click">Декорация14Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация11" id="203">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Статусы объектов&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="205"/>
+									<Events>
+										<Event name="Click">Декорация11Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОбработки" id="193">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа бизнес процессы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаОбработкиРасширеннаяПодсказка" id="194"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация9" id="195">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Статусы согласований&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="197"/>
+									<Events>
+										<Event name="Click">Декорация9Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаБизнесПроцессы" id="183">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Бизнес процессы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа бизнес процессы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаБизнесПроцессыРасширеннаяПодсказка" id="184"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация7" id="185">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Согласование&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="187"/>
+									<Events>
+										<Event name="Click">Декорация7Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.бпсНастройкиСогласования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Ошибки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.бпсОшибки</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаОшибки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаполнитьТЧРегистрАдресации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить ТЧРегистр адресации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаполнитьТЧРегистрАдресации</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаСформироватьЗаписиВРегистрАдресации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСформироватьЗаписиВРегистрАдресации</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаЗаполнитьТЧНастройкиПользователей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаполнитьТЧНастройкиПользователей</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаСформироватьЗаписиНастройкиПользователей" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСформироватьЗаписиНастройкиПользователей</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить учетную запись для отправки уведомлений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить учетную запись для отправки уведомлений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений</Action>
+		</Command>
+		<Command name="КомандаТЧНастройкиПользователейУстановитьФлажки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаТЧНастройкиПользователейУстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаТЧНастройкиПользователейСнятьФлажки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаТЧНастройкиПользователейСнятьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаТЧРегистрАдресацииСнятьФлажки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаТЧРегистрАдресацииСнятьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаТЧРегистрАдресацииУстановитьФлажки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаТЧРегистрАдресацииУстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаЗаполнитьТЧРегистрАдресацииПоПредметуСогласования" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по предмету согласования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по предмету согласования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаполнитьТЧРегистрАдресацииПоПредметуСогласования</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

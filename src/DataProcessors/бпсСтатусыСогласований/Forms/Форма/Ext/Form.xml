@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="26">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<InputField name="ТипОбъектаБД" id="1">
+					<DataPath>Объект.ТипОбъектаБД</DataPath>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ContextMenu name="ТипОбъектаБДКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ТипОбъектаБДРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ТипОбъектаБДПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОбъектБД" id="55">
+					<DataPath>Объект.ОбъектБД</DataPath>
+					<ContextMenu name="ОбъектБДКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ОбъектБДРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ПредметСогласования" id="23">
+					<DataPath>Объект.ПредметСогласования</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.ТипОбъектаБД</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.ТипОбъектаБД</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ПредметСогласованияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПредметСогласованияРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnChange">ПредметСогласованияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="4">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="СписокКомандаОтправитьНаСогласование" id="47">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОтправитьНаСогласование</CommandName>
+						<ExtendedTooltip name="СписокКомандаОтправитьНаСогласованиеРасширеннаяПодсказка" id="48"/>
+					</Button>
+					<Button name="СписокКомандаОткрытьПроцессСогласования" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОткрытьПроцессСогласования</CommandName>
+						<ExtendedTooltip name="СписокКомандаОткрытьПроцессСогласованияРасширеннаяПодсказка" id="44"/>
+					</Button>
+					<Button name="СписокКомандаОтменитьСогласование" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОтменитьСогласование</CommandName>
+						<ExtendedTooltip name="СписокКомандаОтменитьСогласованиеРасширеннаяПодсказка" id="46"/>
+					</Button>
+					<Button name="СписокОбщаяКомандабпсТекущаяЗадачаИИсполнитель" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.бпсКтоМожетСогласовать</CommandName>
+						<DataPath>Items.Список.CurrentData.Согласование</DataPath>
+						<ExtendedTooltip name="СписокОбщаяКомандабпсТекущаяЗадачаИИсполнительРасширеннаяПодсказка" id="50"/>
+					</Button>
+					<Button name="СписокОбщаяКомандабпсОтчетЛистСогласования" id="51">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.бпсОтчетЛистСогласования</CommandName>
+						<DataPath>Items.Список.CurrentData.Согласование</DataPath>
+						<ExtendedTooltip name="СписокОбщаяКомандабпсОтчетЛистСогласованияРасширеннаяПодсказка" id="52"/>
+					</Button>
+					<Button name="СписокСоздать" id="28">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
+						<ExtendedTooltip name="СписокСоздатьРасширеннаяПодсказка" id="29"/>
+					</Button>
+					<Button name="СписокСоздатьГруппу" id="30">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.CreateFolder</CommandName>
+						<ExtendedTooltip name="СписокСоздатьГруппуРасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="СписокСкопировать" id="32">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
+						<ExtendedTooltip name="СписокСкопироватьРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="СписокИзменить" id="37">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+						<ExtendedTooltip name="СписокИзменитьРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="СписокУстановитьПометкуУдаления" id="39">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>false</OnlyInAllActions>
+						<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
+						<ExtendedTooltip name="СписокУстановитьПометкуУдаленияРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="СписокКомандаУстановитьСтатус" id="58">
+						<Type>CommandBarButton</Type>
+						<UserVisible>
+							<xr:Common>true</xr:Common>
+							<xr:Value name="Role._ПолныеПрава">false</xr:Value>
+							<xr:Value name="Role._ЗапускТестов">false</xr:Value>
+							<xr:Value name="Role.бпсПользователь">false</xr:Value>
+							<xr:Value name="Role.бпсРедактированиеРегистраАдресации">false</xr:Value>
+							<xr:Value name="Role.бпсРедактированиеДокументаРегистрацияСтатусаОбъектов">true</xr:Value>
+							<xr:Value name="Role.бпсПолныеПрава">true</xr:Value>
+						</UserVisible>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Command.КомандаУстановитьСтатус</CommandName>
+						<ExtendedTooltip name="СписокКомандаУстановитьСтатусРасширеннаяПодсказка" id="59"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокСсылка" id="17">
+					<DataPath>Список.Ref</DataPath>
+					<ContextMenu name="СписокСсылкаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокСсылкаРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="СписокСтатус" id="20">
+					<DataPath>Список.Статус</DataPath>
+					<ContextMenu name="СписокСтатусКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокСтатусРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокСогласование" id="34">
+					<DataPath>Список.Согласование</DataPath>
+					<ContextMenu name="СписокСогласованиеКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СписокСогласованиеРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа2" id="53">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="54"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.бпсСтатусыСогласований</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Список" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ ПЕРВЫЕ 1
+	бпсТипыОбъектовБД.Ссылка,
+	ЗНАЧЕНИЕ(Справочник.бпсСтатусыОбъектов.ПустаяСсылка) КАК Статус,
+	ЗНАЧЕНИЕ(БизнесПроцесс.бпсСогласование.ПустаяСсылка) КАК Согласование
+ИЗ
+	Справочник.бпсТипыОбъектовБД КАК бпсТипыОбъектовБД
+ГДЕ
+	ЛОЖЬ
+//Фейковый запрос. Основной запрос получается в модуле обработке ПолучитьНастройкиДляСписка</QueryText>
+				<MainTable>Catalog.бпсТипыОбъектовБД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.бпсСтатусыОбъектов.Согласование_Отклонено</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.бпсСтатусыОбъектов.Согласование_Утверждено</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#339966</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.бпсСтатусыОбъектов.Согласование_ВозвращеноНаДоработку</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF9900</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Статус</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.бпсСтатусыОбъектов.Согласование_ВПроцессеСогласования</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЭтоСправочникИерархический" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это справочник иерархический</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОтправитьНаСогласование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить на согласование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить на согласование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Forward</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОтправитьНаСогласование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаОткрытьПроцессСогласования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть процесс согласования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть процесс согласования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОткрытьПроцессСогласования</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаОтменитьСогласование" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить согласование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить согласование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОтменитьСогласование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаУстановитьСтатус" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьСтатус</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

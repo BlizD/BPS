@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КомандаСтатусОбъектаБД" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаСтатусОбъектаБД</CommandName>
+				<ExtendedTooltip name="КомандаСтатусОбъектаБДРасширеннаяПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СуммаДоговора" id="7">
+			<DataPath>Объект.СуммаДоговора</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаДоговораКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СуммаДоговораРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="УсловныеЕдиницы" id="10">
+			<DataPath>Объект.УсловныеЕдиницы</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="УсловныеЕдиницыКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="УсловныеЕдиницыРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="Контрагент" id="13">
+			<DataPath>1/0:f0b15690-3c63-4886-9af2-5363049b1a3f</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Менеджер" id="16">
+			<DataPath>Объект.Менеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МенеджерКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="18"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject._ДоговорыКонтрагентов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСтатусОбъектаБД" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус согласования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус объекта БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСтатусОбъектаБД</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

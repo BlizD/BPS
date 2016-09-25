@@ -1,0 +1,7 @@
+﻿90017c11-0b00-48bd-aa6e-20a075a3f45b-->und\90017c11-0b00-48bd-aa6e-20a075a3f45b
+c38a8e22-dcf9-4405-b5fe-22df5c9f5fbf.0\info-->und\c38a8e22-dcf9-4405-b5fe-22df5c9f5fbf.0\info
+c38a8e22-dcf9-4405-b5fe-22df5c9f5fbf.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

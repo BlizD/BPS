@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКомандаСогласовано" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаСогласовано</CommandName>
+				<ExtendedTooltip name="ФормаКомандаСогласованоРасширеннаяПодсказка" id="21"/>
+			</Button>
+			<Button name="ФормаКомандаВозвращеноНаДоработку" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаВозвращеноНаДоработку</CommandName>
+				<ExtendedTooltip name="ФормаКомандаВозвращеноНаДоработкуРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="ФормаКомандаНеСогласовано" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаНеСогласовано</CommandName>
+				<ExtendedTooltip name="ФормаКомандаНеСогласованоРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаСогласование" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница согласование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаСогласованиеРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<InputField name="ОбъектБД" id="8">
+							<DataPath>Объект.ОбъектБД</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>47</MaxWidth>
+							<ContextMenu name="ОбъектБДКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ОбъектБДРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<InputField name="Инициатор" id="1">
+							<DataPath>Объект.Инициатор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ИнициаторКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="ПредметСогласования" id="11">
+							<DataPath>Объект.ПредметСогласования</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПредметСогласованияКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПредметСогласованияРасширеннаяПодсказка" id="13"/>
+						</InputField>
+						<InputField name="Пояснение" id="14">
+							<DataPath>Пояснение</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПояснениеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="Рецензия" id="17">
+							<DataPath>Рецензия</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="РецензияКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="РецензияРасширеннаяПодсказка" id="19"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаИсторияРецензий" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История рецензий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница история рецензий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаИсторияРецензийРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<Table name="ИсторияРецензий" id="28">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИсторияРецензий</DataPath>
+							<RowPictureDataPath>ИсторияРецензий.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ИсторияРецензийКонтекстноеМеню" id="29"/>
+							<AutoCommandBar name="ИсторияРецензийКоманднаяПанель" id="30"/>
+							<ExtendedTooltip name="ИсторияРецензийРасширеннаяПодсказка" id="31"/>
+							<SearchStringAddition name="ИсторияРецензийСтрокаПоиска" id="32">
+								<AdditionSource>
+									<Item>ИсторияРецензий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРецензийСтрокаПоискаКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ИсторияРецензийСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияРецензийСостояниеПросмотра" id="35">
+								<AdditionSource>
+									<Item>ИсторияРецензий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРецензийСостояниеПросмотраКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ИсторияРецензийСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияРецензийУправлениеПоиском" id="38">
+								<AdditionSource>
+									<Item>ИсторияРецензий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияРецензийУправлениеПоискомКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ИсторияРецензийУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИсторияРецензийДатаРецензии" id="41">
+									<DataPath>ИсторияРецензий.ДатаРецензии</DataPath>
+									<ContextMenu name="ИсторияРецензийДатаРецензииКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ИсторияРецензийДатаРецензииРасширеннаяПодсказка" id="43"/>
+								</LabelField>
+								<LabelField name="ИсторияРецензийРецензия" id="50">
+									<DataPath>ИсторияРецензий.Рецензия</DataPath>
+									<ContextMenu name="ИсторияРецензийРецензияКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ИсторияРецензийРецензияРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<LabelField name="ИсторияРецензийРецензент" id="47">
+									<DataPath>ИсторияРецензий.Рецензент</DataPath>
+									<ContextMenu name="ИсторияРецензийРецензентКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ИсторияРецензийРецензентРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+								<LabelField name="ИсторияРецензийРольАдресации" id="53">
+									<DataPath>ИсторияРецензий.РольАдресации</DataPath>
+									<ContextMenu name="ИсторияРецензийРольАдресацииКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ИсторияРецензийРольАдресацииРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+								<LabelField name="ИсторияРецензийОчередь" id="44">
+									<DataPath>ИсторияРецензий.Очередь</DataPath>
+									<ContextMenu name="ИсторияРецензийОчередьКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ИсторияРецензийОчередьРасширеннаяПодсказка" id="46"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗадачаСсылка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:TaskRef.бпсЗадача</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:BusinessProcessObject.бпсСогласование</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Пояснение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пояснение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Рецензия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рецензия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияРецензий" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История рецензий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	бпсЗадачиПоБизнесПроцессам.Очередь,
+	бпсЗадачиПоБизнесПроцессам.Задача.ФактическаяДатаВыполнения КАК ДатаРецензии,
+	бпсЗадачиПоБизнесПроцессам.Задача.РольАдресации КАК РольАдресации,
+	бпсЗадачиПоБизнесПроцессам.Задача.ФактическийИсполнитель КАК Рецензент,
+	бпсЗадачиПоБизнесПроцессам.Задача,
+	бпсЗадачиПоБизнесПроцессам.Рецензия
+ИЗ
+	РегистрСведений.бпсЗадачиПоБизнесПроцессам КАК бпсЗадачиПоБизнесПроцессам
+ГДЕ
+	(ВЫРАЗИТЬ(бпсЗадачиПоБизнесПроцессам.Рецензия КАК СТРОКА(1))) &lt;&gt; ""
+	И бпсЗадачиПоБизнесПроцессам.ВыводитьВОтчет
+	И бпсЗадачиПоБизнесПроцессам.ИсходныйБизнесПроцесс = &amp;ИсходныйБизнесПроцесс</QueryText>
+				<MainTable>InformationRegister.бпсЗадачиПоБизнесПроцессам</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаРецензии</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСогласовано" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласовано</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда согласовано</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.бпсСветофорЗеленый</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСогласовано</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаНеСогласовано" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не согласовано</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не согласовано</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.бпсСветофорКрасный</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаНеСогласовано</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаВозвращеноНаДоработку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вернуть на доработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвращено на доработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.бпсСветофорЖелтый</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаВозвращеноНаДоработку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

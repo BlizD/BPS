@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСтарт" id="155">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.Start</CommandName>
+				<ExtendedTooltip name="ФормаСтартРасширеннаяПодсказка" id="156"/>
+			</Button>
+			<Button name="ФормаАктивировать" id="153">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.Activate</CommandName>
+				<ExtendedTooltip name="ФормаАктивироватьРасширеннаяПодсказка" id="154"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ОбъектБД" id="13">
+			<DataPath>Объект.ОбъектБД</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОбъектБДКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОбъектБДРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПредметСогласования" id="10">
+			<DataPath>Объект.ПредметСогласования</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПредметСогласованияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПредметСогласованияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Пояснение" id="31">
+			<DataPath>Объект.Пояснение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<Pages name="Страницы" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="ГруппаЛистСогласования" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лист согласования</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЛистСогласованияРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<Table name="ЛистСогласования" id="47">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЛистСогласования</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЛистСогласованияКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="ЛистСогласованияКоманднаяПанель" id="49">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЛистСогласованияРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="ЛистСогласованияСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>ЛистСогласования</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛистСогласованияСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ЛистСогласованияСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЛистСогласованияСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>ЛистСогласования</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛистСогласованияСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="ЛистСогласованияСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЛистСогласованияУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>ЛистСогласования</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛистСогласованияУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ЛистСогласованияУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ЛистСогласованияОчередь" id="63">
+									<DataPath>Объект.ЛистСогласования.Очередь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияОчередьКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ЛистСогласованияОчередьРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="ЛистСогласованияРольАдресации" id="66">
+									<DataPath>Объект.ЛистСогласования.РольАдресации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияРольАдресацииКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ЛистСогласованияРольАдресацииРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ЛистСогласованияПодразделениеАдресации" id="69">
+									<DataPath>Объект.ЛистСогласования.ПодразделениеАдресации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияПодразделениеАдресацииКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ЛистСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<CheckBoxField name="ЛистСогласованияСогласовано" id="72">
+									<DataPath>Объект.ЛистСогласования.Согласовано</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЛистСогласованияСогласованоКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ЛистСогласованияСогласованоРасширеннаяПодсказка" id="74"/>
+								</CheckBoxField>
+								<InputField name="ЛистСогласованияРецензия" id="75">
+									<DataPath>Объект.ЛистСогласования.Рецензия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияРецензияКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ЛистСогласованияРецензияРасширеннаяПодсказка" id="77"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПользователиДляУведомления" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователи для уведомления</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПользователиДляУведомленияРасширеннаяПодсказка" id="85"/>
+					<ChildItems>
+						<Table name="ПользователиДляУведомления" id="86">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПользователиДляУведомления</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПользователиДляУведомленияКонтекстноеМеню" id="87"/>
+							<AutoCommandBar name="ПользователиДляУведомленияКоманднаяПанель" id="88">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользователиДляУведомленияРасширеннаяПодсказка" id="89"/>
+							<SearchStringAddition name="ПользователиДляУведомленияСтрокаПоиска" id="90">
+								<AdditionSource>
+									<Item>ПользователиДляУведомления</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиДляУведомленияСтрокаПоискаКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="ПользователиДляУведомленияСтрокаПоискаРасширеннаяПодсказка" id="92"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользователиДляУведомленияСостояниеПросмотра" id="93">
+								<AdditionSource>
+									<Item>ПользователиДляУведомления</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиДляУведомленияСостояниеПросмотраКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="ПользователиДляУведомленияСостояниеПросмотраРасширеннаяПодсказка" id="95"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользователиДляУведомленияУправлениеПоиском" id="96">
+								<AdditionSource>
+									<Item>ПользователиДляУведомления</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиДляУведомленияУправлениеПоискомКонтекстноеМеню" id="97"/>
+								<ExtendedTooltip name="ПользователиДляУведомленияУправлениеПоискомРасширеннаяПодсказка" id="98"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПользователиДляУведомленияОчередь" id="102">
+									<DataPath>Объект.ПользователиДляУведомления.Очередь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиДляУведомленияОчередьКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПользователиДляУведомленияОчередьРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ПользователиДляУведомленияПользователь" id="105">
+									<DataPath>Объект.ПользователиДляУведомления.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиДляУведомленияПользовательКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ПользователиДляУведомленияПользовательРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ПользователиДляУведомленияСобытие" id="108">
+									<DataPath>Объект.ПользователиДляУведомления.Событие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиДляУведомленияСобытиеКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ПользователиДляУведомленияСобытиеРасширеннаяПодсказка" id="110"/>
+								</InputField>
+								<CheckBoxField name="ПользователиДляУведомленияУведомлятьПочтой" id="111">
+									<DataPath>Объект.ПользователиДляУведомления.УведомлятьПочтой</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПользователиДляУведомленияУведомлятьПочтойКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ПользователиДляУведомленияУведомлятьПочтойРасширеннаяПодсказка" id="113"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПользователиДляУведомленияУведомлятьЗадачей" id="114">
+									<DataPath>Объект.ПользователиДляУведомления.УведомлятьЗадачей</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПользователиДляУведомленияУведомлятьЗадачейКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ПользователиДляУведомленияУведомлятьЗадачейРасширеннаяПодсказка" id="116"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДействия" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<Table name="Действия" id="119">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Действия</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДействияКонтекстноеМеню" id="120"/>
+							<AutoCommandBar name="ДействияКоманднаяПанель" id="121"/>
+							<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="122"/>
+							<SearchStringAddition name="ДействияСтрокаПоиска" id="123">
+								<AdditionSource>
+									<Item>Действия</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДействияСтрокаПоискаКонтекстноеМеню" id="124"/>
+								<ExtendedTooltip name="ДействияСтрокаПоискаРасширеннаяПодсказка" id="125"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДействияСостояниеПросмотра" id="126">
+								<AdditionSource>
+									<Item>Действия</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДействияСостояниеПросмотраКонтекстноеМеню" id="127"/>
+								<ExtendedTooltip name="ДействияСостояниеПросмотраРасширеннаяПодсказка" id="128"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДействияУправлениеПоиском" id="129">
+								<AdditionSource>
+									<Item>Действия</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДействияУправлениеПоискомКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="ДействияУправлениеПоискомРасширеннаяПодсказка" id="131"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДействияНомерСтроки" id="132">
+									<DataPath>Объект.Действия.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДействияНомерСтрокиКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ДействияНомерСтрокиРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+								<InputField name="ДействияСобытие" id="135">
+									<DataPath>Объект.Действия.Событие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДействияСобытиеКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ДействияСобытиеРасширеннаяПодсказка" id="137"/>
+								</InputField>
+								<InputField name="ДействияДействие" id="138">
+									<DataPath>Объект.Действия.Действие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДействияДействиеКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ДействияДействиеРасширеннаяПодсказка" id="140"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаДополнительно" id="149">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаДополнительноРасширеннаяПодсказка" id="150"/>
+					<ChildItems>
+						<InputField name="Инициатор" id="16">
+							<DataPath>Объект.Инициатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИнициаторКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="МаршрутСогласования" id="19">
+							<DataPath>1/0:53790c67-4636-4027-81da-b63ca348f24a</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МаршрутСогласованияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="МаршрутСогласованияРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<CheckBoxField name="Согласовано" id="22">
+							<DataPath>Объект.Согласовано</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СогласованоКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="24"/>
+						</CheckBoxField>
+						<InputField name="ТекущийНомерОчереди" id="25">
+							<DataPath>Объект.ТекущийНомерОчереди</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТекущийНомерОчередиКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ТекущийНомерОчередиРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<CheckBoxField name="УпрощеннаяСистемаУведомлений" id="34">
+							<DataPath>Объект.УпрощеннаяСистемаУведомлений</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УпрощеннаяСистемаУведомленийКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="УпрощеннаяСистемаУведомленийРасширеннаяПодсказка" id="36"/>
+						</CheckBoxField>
+						<CheckBoxField name="УведомитьИнициатораОЗавершении" id="37">
+							<DataPath>Объект.УведомитьИнициатораОЗавершении</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УведомитьИнициатораОЗавершенииКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="УведомитьИнициатораОЗавершенииРасширеннаяПодсказка" id="39"/>
+						</CheckBoxField>
+						<CheckBoxField name="РазрешеноПовторноеСогласование" id="40">
+							<DataPath>Объект.РазрешеноПовторноеСогласование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РазрешеноПовторноеСогласованиеКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="РазрешеноПовторноеСогласованиеРасширеннаяПодсказка" id="42"/>
+						</CheckBoxField>
+						<UsualGroup name="Группа1" id="147">
+							<ReadOnly>true</ReadOnly>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаПротокол" id="151">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Протокол формирования листа согласования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница протокол</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаПротоколРасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<InputField name="ПротоколФормированияЛистаСогласования" id="28">
+							<DataPath>Объект.ПротоколФормированияЛистаСогласования</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПротоколФормированияЛистаСогласованияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПротоколФормированияЛистаСогласованияРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:BusinessProcessObject.бпсСогласование</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
