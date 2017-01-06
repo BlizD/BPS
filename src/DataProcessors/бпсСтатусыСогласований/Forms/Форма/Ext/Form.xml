@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -98,6 +98,21 @@
 						<DataPath>Items.Список.CurrentData.Согласование</DataPath>
 						<ExtendedTooltip name="СписокОбщаяКомандабпсОтчетЛистСогласованияРасширеннаяПодсказка" id="52"/>
 					</Button>
+					<Button name="СписокКомандаУстановитьСтатус" id="58">
+						<Type>CommandBarButton</Type>
+						<UserVisible>
+							<xr:Common>true</xr:Common>
+							<xr:Value name="Role._ПолныеПрава">false</xr:Value>
+							<xr:Value name="Role._ЗапускТестов">false</xr:Value>
+							<xr:Value name="Role.бпсПользователь">false</xr:Value>
+							<xr:Value name="Role.бпсРедактированиеРегистраАдресации">false</xr:Value>
+							<xr:Value name="Role.бпсРедактированиеДокументаРегистрацияСтатусаОбъектов">true</xr:Value>
+							<xr:Value name="Role.бпсПолныеПрава">true</xr:Value>
+						</UserVisible>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Command.КомандаУстановитьСтатус</CommandName>
+						<ExtendedTooltip name="СписокКомандаУстановитьСтатусРасширеннаяПодсказка" id="59"/>
+					</Button>
 					<Button name="СписокСоздать" id="28">
 						<Type>CommandBarButton</Type>
 						<OnlyInAllActions>false</OnlyInAllActions>
@@ -127,21 +142,6 @@
 						<OnlyInAllActions>false</OnlyInAllActions>
 						<CommandName>Form.Item.Список.StandardCommand.SetDeletionMark</CommandName>
 						<ExtendedTooltip name="СписокУстановитьПометкуУдаленияРасширеннаяПодсказка" id="40"/>
-					</Button>
-					<Button name="СписокКомандаУстановитьСтатус" id="58">
-						<Type>CommandBarButton</Type>
-						<UserVisible>
-							<xr:Common>true</xr:Common>
-							<xr:Value name="Role._ПолныеПрава">false</xr:Value>
-							<xr:Value name="Role._ЗапускТестов">false</xr:Value>
-							<xr:Value name="Role.бпсПользователь">false</xr:Value>
-							<xr:Value name="Role.бпсРедактированиеРегистраАдресации">false</xr:Value>
-							<xr:Value name="Role.бпсРедактированиеДокументаРегистрацияСтатусаОбъектов">true</xr:Value>
-							<xr:Value name="Role.бпсПолныеПрава">true</xr:Value>
-						</UserVisible>
-						<OnlyInAllActions>true</OnlyInAllActions>
-						<CommandName>Form.Command.КомандаУстановитьСтатус</CommandName>
-						<ExtendedTooltip name="СписокКомандаУстановитьСтатусРасширеннаяПодсказка" id="59"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
