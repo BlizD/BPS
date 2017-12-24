@@ -1,3 +1,8 @@
+[![Stars](https://img.shields.io/github/stars/BlizD/BPS.svg?label=Github%20%E2%98%85&a)](https://github.com/BlizD/BPS/stargazers)
+[![Github All Releases](https://img.shields.io/github/downloads/BlizD/BPS/total.svg)](https://github.com/BlizD/BPS/releases)
+[![Release](https://img.shields.io/github/tag/BlizD/BPS.svg?label=Last%20release&a)](https://github.com/BlizD/BPS/releases)
+[![Github Releases](https://img.shields.io/github/downloads/BlizD/BPS/latest/total.svg)](https://github.com/BlizD/BPS/releases)
+
 # Согласование (подсистема) #
 
 Согласование (подсистема). Для любого справочника и документа в 1С. Встраивается в любые конфигурации
