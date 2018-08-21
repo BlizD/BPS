@@ -217,7 +217,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ ПЕРВЫЕ 1
+				<QueryText>ВЫБРАТЬ 
 	бпсТипыОбъектовБД.Ссылка,
 	ЗНАЧЕНИЕ(Справочник.бпсСтатусыОбъектов.ПустаяСсылка) КАК Статус,
 	ЗНАЧЕНИЕ(БизнесПроцесс.бпсСогласование.ПустаяСсылка) КАК Согласование

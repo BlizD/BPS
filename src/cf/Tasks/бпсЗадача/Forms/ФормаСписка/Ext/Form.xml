@@ -162,6 +162,12 @@
 					<ContextMenu name="Поле1КонтекстноеМеню" id="49"/>
 					<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="50"/>
 				</LabelField>
+				<LabelField name="Ссылка" id="53">
+					<DataPath>Список.Ref</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="55"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -171,6 +177,9 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
