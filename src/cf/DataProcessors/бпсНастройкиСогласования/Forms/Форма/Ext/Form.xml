@@ -361,6 +361,12 @@
 									<ContextMenu name="ТЧНастройкиПользователейНеУведомлятьОЗадачахПочтойКонтекстноеМеню" id="65"/>
 									<ExtendedTooltip name="ТЧНастройкиПользователейНеУведомлятьОЗадачахПочтойРасширеннаяПодсказка" id="66"/>
 								</CheckBoxField>
+								<InputField name="ТЧНастройкиПользователейИДПользователяТелеграмм" id="236">
+									<DataPath>Объект.ТЧНастройкиПользователей.ИДПользователяТелеграмм</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧНастройкиПользователейИДПользователяТелеграммКонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="ТЧНастройкиПользователейИДПользователяТелеграммРасширеннаяПодсказка" id="238"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -728,6 +734,20 @@
 										<Event name="Click">Декорация8Нажатие</Event>
 									</Events>
 								</LabelDecoration>
+								<LabelDecoration name="Декорация16" id="239">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Константы&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="240"/>
+									<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="241"/>
+									<Events>
+										<Event name="Click">Декорация16Нажатие</Event>
+									</Events>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа1" id="188">
@@ -865,6 +885,20 @@
 									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="205"/>
 									<Events>
 										<Event name="Click">Декорация11Нажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация17" id="242">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Прокси-серверы&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация17КонтекстноеМеню" id="243"/>
+									<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="244"/>
+									<Events>
+										<Event name="Click">Декорация17Нажатие</Event>
 									</Events>
 								</LabelDecoration>
 							</ChildItems>

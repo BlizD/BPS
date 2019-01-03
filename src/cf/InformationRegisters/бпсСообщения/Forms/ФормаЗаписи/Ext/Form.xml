@@ -25,6 +25,11 @@
 			<ContextMenu name="ТелоКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ТелоРасширеннаяПодсказка" id="12"/>
 		</InputField>
+		<InputField name="ОбъектБД" id="34">
+			<DataPath>Запись.ОбъектБД</DataPath>
+			<ContextMenu name="ОбъектБДКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ОбъектБДРасширеннаяПодсказка" id="36"/>
+		</InputField>
 		<InputField name="ДатаСоздания" id="13">
 			<DataPath>Запись.ДатаСоздания</DataPath>
 			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="14"/>
@@ -40,8 +45,24 @@
 			<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="21"/>
 		</InputField>
+		<InputField name="ДатаОтправкиТелеграмм" id="25">
+			<DataPath>Запись.ДатаОтправкиТелеграмм</DataPath>
+			<ContextMenu name="ДатаОтправкиТелеграммКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ДатаОтправкиТелеграммРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="КоличествоПопытокТелеграмм" id="28">
+			<DataPath>Запись.КоличествоПопытокТелеграмм</DataPath>
+			<ContextMenu name="КоличествоПопытокТелеграммКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="КоличествоПопытокТелеграммРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ИДПользователяТелеграмм" id="31">
+			<DataPath>Запись.ИДПользователяТелеграмм</DataPath>
+			<ContextMenu name="ИДПользователяТелеграммКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ИДПользователяТелеграммРасширеннаяПодсказка" id="33"/>
+		</InputField>
 		<InputField name="ИнформацияООшибке" id="22">
 			<DataPath>Запись.ИнформацияООшибке</DataPath>
+			<MultiLine>true</MultiLine>
 			<ContextMenu name="ИнформацияООшибкеКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="ИнформацияООшибкеРасширеннаяПодсказка" id="24"/>
 		</InputField>
