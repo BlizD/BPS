@@ -3,6 +3,11 @@
 [![Release](https://img.shields.io/github/tag/BlizD/BPS.svg?label=Last%20release&a)](https://github.com/BlizD/BPS/releases)
 [![Github Releases](https://img.shields.io/github/downloads/BlizD/BPS/latest/total.svg)](https://github.com/BlizD/BPS/releases)
 
+## Скачать последний релиз ## 
+
+* https://github.com/BlizD/BPS/releases/download/1.0.0.014/BPS_1.0.0.014.zip - скачать последний релиз;
+* https://github.com/BlizD/BPS/releases/ - все релизы.
+
 # Согласование (подсистема) #
 
 Согласование (подсистема). Для любого справочника и документа в 1С. Встраивается в любые конфигурации
@@ -10,10 +15,8 @@
 все делается в режиме исполнения. Открытый код. Бизнес-процессы. Документооборот.
 Описание смотрим на инфостарт: (http://infostart.ru/public/544937/)
  
-## Скачать последний релиз ## 
-
-* https://github.com/BlizD/BPS/releases/download/1.0.0.014/BPS_1.0.0.014.zip - скачать последний релиз;
-* https://github.com/BlizD/BPS/releases/ - все релизы.
+Канал в телеграмме: [@mebps](https://t.me/mebps)
+Почта проекта: sdesk1c@bk.ru
 
 ## Добавить пожелание, ошибку, доработку ## 
 * https://github.com/BlizD/BPS/issues - там жмем кнопку **New issue**
