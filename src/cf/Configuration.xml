@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>BPS</Vendor>
-			<Version>1.0.0.014</Version>
+			<Version>1.0.0.015</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -163,6 +163,7 @@
 			<Catalog>бпсТипыОбъектовБД</Catalog>
 			<Catalog>бпсУсловия</Catalog>
 			<Catalog>бпсУчетныеЗаписиЭлектроннойПочты</Catalog>
+			<Catalog>бпсКонстанты</Catalog>
 			<Document>_ЗаявкаНаОплату</Document>
 			<Document>бпсРегистрацияСтатусаОбъекта</Document>
 			<Enum>бпсВариантыSMTPАутентификации</Enum>
@@ -184,6 +185,7 @@
 			<InformationRegister>бпсСообщения</InformationRegister>
 			<InformationRegister>бпсБизнесПроцессыСогласования</InformationRegister>
 			<InformationRegister>бпсОшибки</InformationRegister>
+			<InformationRegister>бпсПроксиСерверы</InformationRegister>
 			<BusinessProcess>бпсСогласование</BusinessProcess>
 			<Task>бпсЗадача</Task>
 		</ChildObjects>
