@@ -2,6 +2,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/BlizD/BPS/total.svg)](https://github.com/BlizD/BPS/releases)
 [![Release](https://img.shields.io/github/tag/BlizD/BPS.svg?label=Last%20release&a)](https://github.com/BlizD/BPS/releases)
 [![Github Releases](https://img.shields.io/github/downloads/BlizD/BPS/latest/total.svg)](https://github.com/BlizD/BPS/releases)
+[![Infostart](https://img.shields.io/badge/infostart-downloads%20250-blue.svg)](https://infostart.ru/public/544937/)
 
 ## Скачать последний релиз ## 
 
