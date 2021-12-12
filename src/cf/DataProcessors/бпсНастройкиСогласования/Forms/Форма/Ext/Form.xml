@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -43,7 +43,7 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;fontsize 10&gt;&lt;b&gt;&lt;color #3366ff&gt;Необходимо заполнить системную учетную запись для отправки уведомлений&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+									<v8:content>&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;Необходимо заполнить системную учетную запись для отправки уведомлений&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ДекорацияПояснениеСистемнаяУчетнаяЗаписьПользователяКонтекстноеМеню" id="110"/>
@@ -93,7 +93,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;color #3366ff&gt;Необходимо выбрать тип объекта для которого нам требуется настроить новое согласование.&lt;/&gt;</v8:content>
+											<v8:content>&lt;color #3366FF&gt;Необходимо выбрать тип объекта для которого нам требуется настроить новое согласование.&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияЭтап1ПояснениеКонтекстноеМеню" id="131"/>
@@ -103,7 +103,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;1. Добавить тип объекта&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;1. Добавить тип объекта&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -137,7 +137,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;color #3366ff&gt;Для созданного типа объекта (на 1 этапе) необходимо добавить предмет согласования. В котором указать условия определения листа согласования.&lt;/&gt;</v8:content>
+											<v8:content>&lt;color #3366FF&gt;Для созданного типа объекта (на 1 этапе) необходимо добавить предмет согласования. В котором указать условия определения листа согласования.&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияЭтап2ПояснениеКонтекстноеМеню" id="138"/>
@@ -147,7 +147,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;2. Добавить предмет согласования&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;2. Добавить предмет согласования&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -181,10 +181,10 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;color #3366ff&gt;Необходимо добавить записи в регистр адресации для указанных ролей и подразделений организаций в предмете согласования (этап №2).&lt;/&gt;
+											<v8:content>&lt;color #3366FF&gt;Необходимо добавить записи в регистр адресации для указанных ролей и подразделений организаций в предмете согласования (этап №2).&lt;/&gt;
 
-&lt;color #3366ff&gt;Например: если мы в предмете согласования указали &lt;/&gt;
-&lt;color #3366ff&gt;роль: Коммерческий директор и подразделение: Южный регион. Мы должны для этой пары указать того пользователя, кто у нас является коммерческим директором&lt;/&gt;</v8:content>
+&lt;color #3366FF&gt;Например: если мы в предмете согласования указали &lt;/&gt;
+&lt;color #3366FF&gt;роль: Коммерческий директор и подразделение: Южный регион. Мы должны для этой пары указать того пользователя, кто у нас является коммерческим директором&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияЭтап3ПояснениеКонтекстноеМеню" id="146"/>
@@ -194,7 +194,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;3. Настроить регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;3. Настроить регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -228,7 +228,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;color #3366ff&gt;Проверить для всех ли пользователей указан адрес электронной почты, это необходимо для отправки уведомлений по согласованию.&lt;/&gt;</v8:content>
+											<v8:content>&lt;color #3366FF&gt;Проверить для всех ли пользователей указан адрес электронной почты, это необходимо для отправки уведомлений по согласованию.&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияЭтап4ПояснениеКонтекстноеМеню" id="151"/>
@@ -238,7 +238,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;4. Заполнить настройки пользователя&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;4. Заполнить настройки пользователя&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -272,7 +272,7 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;fontsize 10&gt;&lt;b&gt;&lt;color #3366ff&gt;Необходимо указать адрес электронной почты для пользователей&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+									<v8:content>&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;Необходимо указать адрес электронной почты для пользователей&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ДекорацияПояснениеТЧНастройкиПользователейКонтекстноеМеню" id="98"/>
@@ -282,6 +282,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ТЧНастройкиПользователей</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТЧНастройкиПользователейКонтекстноеМеню" id="43"/>
@@ -393,7 +394,7 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;color #3366ff&gt;Необходимо указать пользователей для следующих ролей и подразделений&lt;/&gt;</v8:content>
+									<v8:content>&lt;color #3366FF&gt;Необходимо указать пользователей для следующих ролей и подразделений&lt;/&gt;</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="29"/>
@@ -431,6 +432,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ТЧРегистрАдресации</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТЧРегистрАдресацииКонтекстноеМеню" id="2"/>
@@ -547,6 +549,7 @@
 						<Table name="Ошибки" id="69">
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Ошибки</DataPath>
 							<RowPictureDataPath>Ошибки.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
@@ -654,7 +657,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Типы объектов&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Типы объектов&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -668,7 +671,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Предметы согласования&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Предметы согласования&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -682,7 +685,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Условия&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Условия&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -696,7 +699,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Подразделения адресации&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Подразделения адресации&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -710,7 +713,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Роли адресации&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Роли адресации&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -724,7 +727,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Учетные записи электронной почты&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Учетные записи электронной почты&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -738,7 +741,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Константы&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Константы&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -775,7 +778,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Регистрация статуса объекта&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Регистрация статуса объекта&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -807,7 +810,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Настройки пользователей&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Настройки пользователей&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -821,7 +824,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Регистр адресации&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -835,7 +838,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Заблокированные объекты&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Заблокированные объекты&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -849,7 +852,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Сообщения&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Сообщения&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -863,7 +866,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Ошибки&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Ошибки&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -877,7 +880,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Статусы объектов&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Статусы объектов&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -891,7 +894,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Прокси-серверы&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Прокси-серверы&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -923,7 +926,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Статусы согласований&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Статусы согласований&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -955,7 +958,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Согласование&lt;/&gt;&lt;/&gt;</v8:content>
+											<v8:content>&lt;b&gt;&lt;color #3366FF&gt;Согласование&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<Hyperlink>true</Hyperlink>
@@ -1036,6 +1039,7 @@
 			</Picture>
 			<Action>КомандаЗаполнитьТЧРегистрАдресации</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаСформироватьЗаписиВРегистрАдресации" id="2">
 			<Title>
@@ -1056,6 +1060,7 @@
 			</Picture>
 			<Action>КомандаСформироватьЗаписиВРегистрАдресации</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаЗаполнитьТЧНастройкиПользователей" id="3">
 			<Title>
@@ -1070,6 +1075,7 @@
 			</Picture>
 			<Action>КомандаЗаполнитьТЧНастройкиПользователей</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаСформироватьЗаписиНастройкиПользователей" id="4">
 			<Title>
@@ -1090,6 +1096,7 @@
 			</Picture>
 			<Action>КомандаСформироватьЗаписиНастройкиПользователей</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений" id="5">
 			<Title>
@@ -1105,6 +1112,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаЗаполнитьУчетнуюЗаписьДляОтправкиУведомлений</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаТЧНастройкиПользователейУстановитьФлажки" id="6">
 			<Title>
@@ -1125,6 +1133,7 @@
 			</Picture>
 			<Action>КомандаТЧНастройкиПользователейУстановитьФлажки</Action>
 			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаТЧНастройкиПользователейСнятьФлажки" id="7">
 			<Title>
@@ -1145,6 +1154,7 @@
 			</Picture>
 			<Action>КомандаТЧНастройкиПользователейСнятьФлажки</Action>
 			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаТЧРегистрАдресацииСнятьФлажки" id="8">
 			<Title>
@@ -1165,6 +1175,7 @@
 			</Picture>
 			<Action>КомандаТЧРегистрАдресацииСнятьФлажки</Action>
 			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаТЧРегистрАдресацииУстановитьФлажки" id="9">
 			<Title>
@@ -1185,6 +1196,7 @@
 			</Picture>
 			<Action>КомандаТЧРегистрАдресацииУстановитьФлажки</Action>
 			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КомандаЗаполнитьТЧРегистрАдресацииПоПредметуСогласования" id="10">
 			<Title>
@@ -1205,6 +1217,7 @@
 			</Picture>
 			<Action>КомандаЗаполнитьТЧРегистрАдресацииПоПредметуСогласования</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>

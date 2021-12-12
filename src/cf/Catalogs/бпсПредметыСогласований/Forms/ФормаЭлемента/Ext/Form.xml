@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -64,6 +65,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ОпределениеЛистаСогласования</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ОпределениеЛистаСогласованияКонтекстноеМеню" id="27"/>
@@ -71,14 +73,14 @@
 								<ChildItems>
 									<Button name="ОпределениеЛистаСогласованияПереместитьВверх" id="121">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.ОпределениеЛистаСогласования.StandardCommand.MoveUp</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ОпределениеЛистаСогласованияПереместитьВверхРасширеннаяПодсказка" id="122"/>
 									</Button>
 									<Button name="ОпределениеЛистаСогласованияПереместитьВниз" id="123">
 										<Type>CommandBarButton</Type>
-										<OnlyInAllActions>true</OnlyInAllActions>
 										<CommandName>Form.Item.ОпределениеЛистаСогласования.StandardCommand.MoveDown</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ОпределениеЛистаСогласованияПереместитьВнизРасширеннаяПодсказка" id="124"/>
 									</Button>
 								</ChildItems>
@@ -170,6 +172,13 @@
 									<ContextMenu name="ОпределениеЛистаСогласованияПодразделениеАдресацииКонтекстноеМеню" id="52"/>
 									<ExtendedTooltip name="ОпределениеЛистаСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="53"/>
 								</InputField>
+								<CheckBoxField name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресат" id="143">
+									<DataPath>Объект.ОпределениеЛистаСогласования.ПропускатьЕслиНеЗаданАдресат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатРасширеннаяПодсказка" id="145"/>
+								</CheckBoxField>
 								<CheckBoxField name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчереди" id="140">
 									<DataPath>Объект.ОпределениеЛистаСогласования.НеУвеличиватьНомерОчереди</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -195,6 +204,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.Действия</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ДействияКонтекстноеМеню" id="90"/>
@@ -304,6 +314,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ПользователиДляУведомления</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ПользователиДляУведомленияКонтекстноеМеню" id="57"/>
@@ -420,13 +431,11 @@
 							</Events>
 						</CheckBoxField>
 						<InputField name="ОбъектБДИмяМетаданных" id="118">
-							<DataPath>1/0:588584b3-b14a-43b4-a41e-682e20045a58</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="ОбъектБДИмяМетаданныхКонтекстноеМеню" id="119"/>
 							<ExtendedTooltip name="ОбъектБДИмяМетаданныхРасширеннаяПодсказка" id="120"/>
 						</InputField>
 						<InputField name="МенеджерОбъекта" id="125">
-							<DataPath>1/0:8a0e53a8-ad49-45ef-8ca0-cad7de77187a</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="МенеджерОбъектаКонтекстноеМеню" id="126"/>
 							<ExtendedTooltip name="МенеджерОбъектаРасширеннаяПодсказка" id="127"/>
@@ -443,6 +452,16 @@
 							<ContextMenu name="ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласованКонтекстноеМеню" id="138"/>
 							<ExtendedTooltip name="ЗапретитьИспользованиеОбъектаБДПокаОнНеСогласованРасширеннаяПодсказка" id="139"/>
 						</CheckBoxField>
+						<Button name="УказатьРазрешенныеРеквизиты" id="154">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УказатьРазрешенныеРеквизиты</CommandName>
+							<ExtendedTooltip name="УказатьРазрешенныеРеквизитыРасширеннаяПодсказка" id="155"/>
+						</Button>
+						<LabelDecoration name="ДекорацияРазрешенныеРеквизиты" id="151">
+							<TextColor>#333399</TextColor>
+							<ContextMenu name="ДекорацияРазрешенныеРеквизитыКонтекстноеМеню" id="152"/>
+							<ExtendedTooltip name="ДекорацияРазрешенныеРеквизитыРасширеннаяПодсказка" id="153"/>
+						</LabelDecoration>
 						<InputField name="Код" id="1">
 							<DataPath>Объект.Code</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -506,4 +525,21 @@
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
+	<Commands>
+		<Command name="УказатьРазрешенныеРеквизиты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Указать разрешенные реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Указать разрешенные реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УказатьРазрешенныеРеквизиты</Action>
+		</Command>
+	</Commands>
 </Form>
