@@ -70,9 +70,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.бпсВариантыSMTPАутентификации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">5be9b708-2b7b-45cf-ab96-3d0d40907c21</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсКонстанты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бпсПроксиСерверы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бпсАлгоритмыНахожденияСогласователей</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

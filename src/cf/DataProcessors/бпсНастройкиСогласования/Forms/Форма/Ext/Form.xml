@@ -681,6 +681,20 @@
 										<Event name="Click">Декорация3Нажатие</Event>
 									</Events>
 								</LabelDecoration>
+								<LabelDecoration name="Декорация18" id="245">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;color #3366ff&gt;Алгоритмы нахождения согласователей&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="246"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="247"/>
+									<Events>
+										<Event name="Click">Декорация18Нажатие</Event>
+									</Events>
+								</LabelDecoration>
 								<LabelDecoration name="Декорация4" id="170">
 									<Title formatted="true">
 										<v8:item>
