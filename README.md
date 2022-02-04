@@ -31,7 +31,7 @@
 
 * https://www.youtube.com/playlist?list=PLoqXpHnlZWtPmqQpeIOyN-miys0MawG92
 
-## Вариант доработки через CF файл (самое простое) подробнее в задаче #215
+## Вариант доработки через CF файл (самое простое) подробнее в задаче [#30](https://github.com/BlizD/BPS/issues/30)
 
 **Алгоритм:**
 
