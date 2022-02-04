@@ -7,7 +7,7 @@
 
 ## Скачать последний релиз ## 
 
-* https://github.com/BlizD/BPS/releases/download/1.0.0.018/BPS_1.0.0.018.zip - скачать последний релиз;
+* https://github.com/BlizD/BPS/releases/download/1.0.0.18/BPS_1.0.0.018.zip - скачать последний релиз;
 * https://github.com/BlizD/BPS/releases/ - все релизы.
 
 # Согласование (подсистема) #
