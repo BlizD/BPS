@@ -261,6 +261,7 @@
 			<Catalog>бпсУсловия</Catalog>
 			<Catalog>бпсУчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>бпсКонстанты</Catalog>
+			<Catalog>бпсАлгоритмыНахожденияСогласователей</Catalog>
 			<Document>_ЗаявкаНаОплату</Document>
 			<Document>бпсРегистрацияСтатусаОбъекта</Document>
 			<Enum>бпсВариантыSMTPАутентификации</Enum>

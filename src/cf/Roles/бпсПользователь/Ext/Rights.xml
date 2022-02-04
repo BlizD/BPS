@@ -919,6 +919,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.бпсАлгоритмыНахожденияСогласователей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.бпсСообщения.Resource.Тема</name>
 		<right>
 			<name>Edit</name>

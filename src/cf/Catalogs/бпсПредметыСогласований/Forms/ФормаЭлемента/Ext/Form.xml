@@ -111,6 +111,7 @@
 								<ExtendedTooltip name="ОпределениеЛистаСогласованияУправлениеПоискомРасширеннаяПодсказка" id="38"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="BeforeEditEnd">ОпределениеЛистаСогласованияПередОкончаниемРедактирования</Event>
 								<Event name="OnStartEdit">ОпределениеЛистаСогласованияПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
@@ -154,38 +155,69 @@
 										<Event name="StartChoice">ОпределениеЛистаСогласованияУсловиеНачалоВыбора</Event>
 									</Events>
 								</InputField>
-								<InputField name="ОпределениеЛистаСогласованияРольАдресации" id="48">
-									<DataPath>Объект.ОпределениеЛистаСогласования.РольАдресации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-									<ContextMenu name="ОпределениеЛистаСогласованияРольАдресацииКонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияРольАдресацииРасширеннаяПодсказка" id="50"/>
-								</InputField>
-								<InputField name="ОпределениеЛистаСогласованияПодразделениеАдресации" id="51">
-									<DataPath>Объект.ОпределениеЛистаСогласования.ПодразделениеАдресации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-									<ContextMenu name="ОпределениеЛистаСогласованияПодразделениеАдресацииКонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="53"/>
-								</InputField>
-								<CheckBoxField name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресат" id="143">
-									<DataPath>Объект.ОпределениеЛистаСогласования.ПропускатьЕслиНеЗаданАдресат</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатКонтекстноеМеню" id="144"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатРасширеннаяПодсказка" id="145"/>
-								</CheckBoxField>
-								<CheckBoxField name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчереди" id="140">
-									<DataPath>Объект.ОпределениеЛистаСогласования.НеУвеличиватьНомерОчереди</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиКонтекстноеМеню" id="141"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиРасширеннаяПодсказка" id="142"/>
-								</CheckBoxField>
+								<ColumnGroup name="ОпределениеЛистаСогласованияГруппа1" id="159">
+									<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа1РасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<ColumnGroup name="ОпределениеЛистаСогласованияГруппа2" id="161">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа2РасширеннаяПодсказка" id="162"/>
+											<ChildItems>
+												<InputField name="ОпределениеЛистаСогласованияРольАдресации" id="48">
+													<DataPath>Объект.ОпределениеЛистаСогласования.РольАдресации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="ОпределениеЛистаСогласованияРольАдресацииКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ОпределениеЛистаСогласованияРольАдресацииРасширеннаяПодсказка" id="50"/>
+													<Events>
+														<Event name="ChoiceProcessing">РольАдресацииОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ОпределениеЛистаСогласованияПодразделениеАдресации" id="51">
+													<DataPath>Объект.ОпределениеЛистаСогласования.ПодразделениеАдресации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="ОпределениеЛистаСогласованияПодразделениеАдресацииКонтекстноеМеню" id="52"/>
+													<ExtendedTooltip name="ОпределениеЛистаСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="53"/>
+													<Events>
+														<Event name="ChoiceProcessing">ПодразделениеАдресацииОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователей" id="156">
+											<DataPath>Объект.ОпределениеЛистаСогласования.АлгоритмНахожденияСогласователей</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователейКонтекстноеМеню" id="157"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователейРасширеннаяПодсказка" id="158"/>
+											<Events>
+												<Event name="ChoiceProcessing">АлгоритмНахожденияСогласователейОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ОпределениеЛистаСогласованияГруппа3" id="163">
+									<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа3РасширеннаяПодсказка" id="164"/>
+									<ChildItems>
+										<CheckBoxField name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресат" id="143">
+											<DataPath>Объект.ОпределениеЛистаСогласования.ПропускатьЕслиНеЗаданАдресат</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатКонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатРасширеннаяПодсказка" id="145"/>
+										</CheckBoxField>
+										<CheckBoxField name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчереди" id="140">
+											<DataPath>Объект.ОпределениеЛистаСогласования.НеУвеличиватьНомерОчереди</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиРасширеннаяПодсказка" id="142"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</Table>
 					</ChildItems>
