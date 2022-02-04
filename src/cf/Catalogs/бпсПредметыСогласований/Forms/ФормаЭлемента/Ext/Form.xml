@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -10,6 +10,7 @@
 	<ChildItems>
 		<UsualGroup name="Группа1" id="111">
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="112"/>
@@ -49,6 +50,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
 				<Page name="ГруппаОпределениеЛистаСогласования" id="24">
@@ -111,6 +113,7 @@
 								<ExtendedTooltip name="ОпределениеЛистаСогласованияУправлениеПоискомРасширеннаяПодсказка" id="38"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="BeforeEditEnd">ОпределениеЛистаСогласованияПередОкончаниемРедактирования</Event>
 								<Event name="OnStartEdit">ОпределениеЛистаСогласованияПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
@@ -154,38 +157,69 @@
 										<Event name="StartChoice">ОпределениеЛистаСогласованияУсловиеНачалоВыбора</Event>
 									</Events>
 								</InputField>
-								<InputField name="ОпределениеЛистаСогласованияРольАдресации" id="48">
-									<DataPath>Объект.ОпределениеЛистаСогласования.РольАдресации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-									<ContextMenu name="ОпределениеЛистаСогласованияРольАдресацииКонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияРольАдресацииРасширеннаяПодсказка" id="50"/>
-								</InputField>
-								<InputField name="ОпределениеЛистаСогласованияПодразделениеАдресации" id="51">
-									<DataPath>Объект.ОпределениеЛистаСогласования.ПодразделениеАдресации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-									<ContextMenu name="ОпределениеЛистаСогласованияПодразделениеАдресацииКонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="53"/>
-								</InputField>
-								<CheckBoxField name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресат" id="143">
-									<DataPath>Объект.ОпределениеЛистаСогласования.ПропускатьЕслиНеЗаданАдресат</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатКонтекстноеМеню" id="144"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатРасширеннаяПодсказка" id="145"/>
-								</CheckBoxField>
-								<CheckBoxField name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчереди" id="140">
-									<DataPath>Объект.ОпределениеЛистаСогласования.НеУвеличиватьНомерОчереди</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиКонтекстноеМеню" id="141"/>
-									<ExtendedTooltip name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиРасширеннаяПодсказка" id="142"/>
-								</CheckBoxField>
+								<ColumnGroup name="ОпределениеЛистаСогласованияГруппа1" id="159">
+									<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа1РасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<ColumnGroup name="ОпределениеЛистаСогласованияГруппа2" id="161">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа2РасширеннаяПодсказка" id="162"/>
+											<ChildItems>
+												<InputField name="ОпределениеЛистаСогласованияРольАдресации" id="48">
+													<DataPath>Объект.ОпределениеЛистаСогласования.РольАдресации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="ОпределениеЛистаСогласованияРольАдресацииКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ОпределениеЛистаСогласованияРольАдресацииРасширеннаяПодсказка" id="50"/>
+													<Events>
+														<Event name="ChoiceProcessing">РольАдресацииОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ОпределениеЛистаСогласованияПодразделениеАдресации" id="51">
+													<DataPath>Объект.ОпределениеЛистаСогласования.ПодразделениеАдресации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ContextMenu name="ОпределениеЛистаСогласованияПодразделениеАдресацииКонтекстноеМеню" id="52"/>
+													<ExtendedTooltip name="ОпределениеЛистаСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="53"/>
+													<Events>
+														<Event name="ChoiceProcessing">ПодразделениеАдресацииОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователей" id="156">
+											<DataPath>Объект.ОпределениеЛистаСогласования.АлгоритмНахожденияСогласователей</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователейКонтекстноеМеню" id="157"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияАлгоритмНахожденияСогласователейРасширеннаяПодсказка" id="158"/>
+											<Events>
+												<Event name="ChoiceProcessing">АлгоритмНахожденияСогласователейОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ОпределениеЛистаСогласованияГруппа3" id="163">
+									<ExtendedTooltip name="ОпределениеЛистаСогласованияГруппа3РасширеннаяПодсказка" id="164"/>
+									<ChildItems>
+										<CheckBoxField name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресат" id="143">
+											<DataPath>Объект.ОпределениеЛистаСогласования.ПропускатьЕслиНеЗаданАдресат</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатКонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияПропускатьЕслиНеЗаданАдресатРасширеннаяПодсказка" id="145"/>
+										</CheckBoxField>
+										<CheckBoxField name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчереди" id="140">
+											<DataPath>Объект.ОпределениеЛистаСогласования.НеУвеличиватьНомерОчереди</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ОпределениеЛистаСогласованияНеУвеличиватьНомерОчередиРасширеннаяПодсказка" id="142"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</Table>
 					</ChildItems>
