@@ -1,5 +1,10 @@
 [![Quality Gate Status](https://sonar.openbsl.ru/api/project_badges/measure?project=tasks&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=bps)
 
+**Выпущена версия 1.0.0.ххх] (Обновление от хх.хх.2022)**
+
+Прочее: 
+* @Poirus9 #32 Скорректировал получение номера строки при проверке разрешенных реквизитов
+
 **Выпущена версия 1.0.0.018 (Обновление от 04.02.2022)**
 
 Изменения: 
