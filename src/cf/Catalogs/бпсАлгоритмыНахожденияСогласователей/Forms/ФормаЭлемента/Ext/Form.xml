@@ -26,6 +26,7 @@
 			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="ТекстПроизвольногоУсловия" id="10">
+			<DataPath>Объект.ТекстПроизвольногоУсловия</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
