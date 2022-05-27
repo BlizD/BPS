@@ -104,6 +104,12 @@
 									<ContextMenu name="ЛистСогласованияОчередьКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ЛистСогласованияОчередьРасширеннаяПодсказка" id="65"/>
 								</InputField>
+								<InputField name="ЛистСогласованияСогласователь" id="157">
+									<DataPath>Объект.ЛистСогласования.Согласователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияСогласовательКонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="ЛистСогласованияСогласовательРасширеннаяПодсказка" id="159"/>
+								</InputField>
 								<InputField name="ЛистСогласованияРольАдресации" id="66">
 									<DataPath>Объект.ЛистСогласования.РольАдресации</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -115,6 +121,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ЛистСогласованияПодразделениеАдресацииКонтекстноеМеню" id="70"/>
 									<ExtendedTooltip name="ЛистСогласованияПодразделениеАдресацииРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="ЛистСогласованияАлгоритм" id="160">
+									<DataPath>Объект.ЛистСогласования.Алгоритм</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛистСогласованияАлгоритмКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="ЛистСогласованияАлгоритмРасширеннаяПодсказка" id="162"/>
 								</InputField>
 								<CheckBoxField name="ЛистСогласованияСогласовано" id="72">
 									<DataPath>Объект.ЛистСогласования.Согласовано</DataPath>
@@ -308,7 +320,6 @@
 							<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="18"/>
 						</InputField>
 						<InputField name="МаршрутСогласования" id="19">
-							<DataPath>1/0:53790c67-4636-4027-81da-b63ca348f24a</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="МаршрутСогласованияКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="МаршрутСогласованияРасширеннаяПодсказка" id="21"/>
