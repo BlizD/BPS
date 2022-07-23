@@ -10,11 +10,13 @@
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
 		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -26,8 +28,10 @@
 			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="ТекстПроизвольногоУсловия" id="10">
+			<DataPath>Объект.ТекстПроизвольногоУсловия</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>10</Height>
 			<MultiLine>true</MultiLine>
 			<ExtendedEdit>true</ExtendedEdit>
 			<ContextMenu name="ТекстПроизвольногоУсловияКонтекстноеМеню" id="11"/>
