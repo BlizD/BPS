@@ -1,6 +1,6 @@
 [![Quality Gate Status](https://sonar.openbsl.ru/api/project_badges/measure?project=tasks&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=bps)
 
-**Выпущена версия 1.0.0.ххх] (Обновление от хх.хх.2022)**
+**Выпущена версия 1.0.0.019] (Обновление от 23.07.2022)**
 
 Новое: 
 * @YUYA1964 #35 В Согласование добавлена колонка "Согласователь" и "Алгоритм" в табличную часть "ЛистСогласования". [Инструкция](https://github.com/BlizD/BPS/wiki/Как-указать-свой-алгоритм-для-нахождения-тех-кто-будет-согласовывать)
