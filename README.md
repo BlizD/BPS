@@ -3,7 +3,8 @@
 [![Release](https://img.shields.io/github/tag/BlizD/BPS.svg?label=Last%20release&a)](https://github.com/BlizD/BPS/releases)
 [![Github Releases](https://img.shields.io/github/downloads/BlizD/BPS/latest/total.svg)](https://github.com/BlizD/BPS/releases)
 [![Infostart](https://img.shields.io/badge/infostart-downloads%20250-blue.svg)](https://infostart.ru/public/544937/)
-
+[![telegram](https://img.shields.io/badge/telegram-channal-green.svg)](https://t.me/mebps)
+[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/1/59638035.json)](https://openyellow.org/grid?data=top&repo=59638035)
 
 ## Скачать последний релиз ## 
 
@@ -30,6 +31,13 @@
 ## Видео инструкции (очень короткие) ##
 
 * https://www.youtube.com/playlist?list=PLoqXpHnlZWtPmqQpeIOyN-miys0MawG92
+* [Видео - Настройка нового согласования 1 часть](https://vkvideo.ru/video1393438_456239043)
+* [Видео - Настройка нового согласования 2 часть:](https://vkvideo.ru/video1393438_456239045)
+* [Видео - Обзор подсистемы Согласования часть 1:](https://vkvideo.ru/video1393438_456239041)
+* [Видео - Обзор подсистемы Согласования часть 2:]( https://vkvideo.ru/video1393438_456239042)
+* [Видео - Как встроить подсистему Согласование в конфигурацию:]( https://vkvideo.ru/video1393438_456239044)
+* [Видео - Как настроить учетную запись для отправки уведомлений:]( https://vkvideo.ru/video1393438_456239046)
+* [Все видео список Согласование (подсистема) 1с](https://vkvideo.ru/playlist/1393438_2)
 
 ## Вариант доработки через CF файл (самое простое) подробнее в задаче [#30](https://github.com/BlizD/BPS/issues/30)
 
