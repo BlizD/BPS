@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/tag/BlizD/BPS.svg?label=Last%20release&a)](https://github.com/BlizD/BPS/releases)
 [![Github Releases](https://img.shields.io/github/downloads/BlizD/BPS/latest/total.svg)](https://github.com/BlizD/BPS/releases)
 [![Infostart](https://img.shields.io/badge/infostart-downloads%20250-blue.svg)](https://infostart.ru/public/544937/)
-[![telegram](https://img.shields.io/badge/telegram-channal-green.svg)](https://t.me/mebps)
+[![telegram](https://img.shields.io/badge/telegram-channel-green.svg)](https://t.me/mebps)
 [![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/1/59638035.json)](https://openyellow.org/grid?data=top&repo=59638035)
 
 ## Скачать последний релиз ## 
